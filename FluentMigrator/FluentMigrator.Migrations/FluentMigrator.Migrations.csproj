@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentMigrator" Version="3.2.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="_002_CreateProc_Down.sql" />
+    <Content Include="_002_CreateProc_Down.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Remove="_002_CreateProc_Up.sql" />
+    <Content Include="_002_CreateProc_Up.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

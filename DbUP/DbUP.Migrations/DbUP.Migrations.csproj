@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="001-CreateTable.sql" />
+    <EmbeddedResource Include="001-CreateTable.sql" />
+  </ItemGroup>
+
+</Project>
